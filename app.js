@@ -26,7 +26,7 @@ dotenv.config({
     path: "./.env",
 })
 
- const adminSecretKey = process.env.ADMIN_SECRET_KEY || "MANISHBHARTI"
+ const adminSecretKey = process.env.ADMIN_SECRET_KEY || "ADITYAGUPTA"
 
 const mongoURI = process.env.MONGO_URI;
 const port = process.env.PORT || 3000;
@@ -63,7 +63,7 @@ app.use("/api/v1/admin", adminRoute);
 
 
 app.get("/", (req, resp) => {
-    resp.send("hello bhadwe");
+    resp.send("hello ");
 })
 
 
